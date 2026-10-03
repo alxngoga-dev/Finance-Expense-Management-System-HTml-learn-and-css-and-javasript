@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Budget - Finance Manager</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         SIDEBAR
+    ========================================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>Finance<span>Manager</span></h2>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="../index.html">
+                Dashboard
+            </a>
+
+            <a href="transactions.html">
+                Transactions
+            </a>
+
+            <a href="add-transaction.html">
+                Add Transaction
+            </a>
+
+            <a href="budget.html" class="active">
+                Budget
+            </a>
+
+            <a href="reports.html">
+                Reports
+            </a>
+
+            <a href="categories.html">
+                Categories
+            </a>
+
+            <a href="settings.html">
+                Settings
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- ========================================
+         MAIN CONTENT
+    ======================================== -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <header class="page-header">
+
+            <div>
+
+                <h1>Monthly Budget</h1>
+
+                <p>
+                    Plan and monitor your monthly spending.
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <!-- ========================================
+             BUDGET FORM
+        ======================================== -->
+
+        <section class="content-card">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>Set Monthly Budget</h2>
+
+                    <p>
+                        Choose the maximum amount you want
+                        to spend this month.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <form id="budgetForm">
+
+                <div class="form-group">
+
+                    <label for="budgetAmount">
+                        Monthly Budget (RWF)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="budgetAmount"
+                        min="1"
+                        placeholder="Example: 300000"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Save Budget
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- ========================================
+             BUDGET SUMMARY
+        ========================================= -->
+
+        <section class="summary-grid">
+
+            <div class="summary-card">
+
+                <div class="summary-card-header">
+                    <span>Monthly Budget</span>
+                </div>
+
+                <h2 id="budgetTotal">
+                    0 RWF
+                </h2>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-card-header">
+                    <span>Total Spent</span>
+                </div>
+
+                <h2 id="budgetSpent">
+                    0 RWF
+                </h2>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-card-header">
+                    <span>Remaining</span>
+                </div>
+
+                <h2 id="budgetRemaining">
+                    0 RWF
+                </h2>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-card-header">
+                    <span>Used</span>
+                </div>
+
+                <h2 id="budgetPercentage">
+                    0%
+                </h2>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             PROGRESS
+        ========================================= -->
+
+        <section class="content-card">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>Budget Progress</h2>
+
+                    <p id="budgetStatus">
+                        Set a budget to start tracking.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="budget-progress">
+
+                <div class="progress-track">
+
+                    <div
+                        id="budgetProgressBar"
+                        class="progress-bar"
+                    ></div>
+
+                </div>
+
+                <div class="progress-info">
+
+                    <span id="progressSpent">
+                        0 RWF spent
+                    </span>
+
+                    <span id="progressBudget">
+                        0 RWF budget
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Shared JavaScript -->
+
+    <script src="../js/app.js"></script>
+
+    <!-- Budget JavaScript -->
+
+    <script src="../js/budget.js"></script>
+
+</body>
+
+</html>

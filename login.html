@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Login to Finance Manager and manage your finances."
+    >
+
+    <title>Login | Finance Manager</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login-page">
+
+    <!-- ========================================
+         LOGIN CONTAINER
+    ========================================= -->
+
+    <main class="login-container">
+
+        <!-- ========================================
+             LOGIN CARD
+        ========================================= -->
+
+        <section class="login-card">
+
+            <!-- Logo -->
+
+            <a
+                href="landing.html"
+                class="login-logo"
+            >
+                Finance<span>Manager</span>
+            </a>
+
+
+            <!-- Heading -->
+
+            <div class="login-heading">
+
+                <h1>
+                    Welcome back
+                </h1>
+
+                <p>
+                    Login to continue managing your finances.
+                </p>
+
+            </div>
+
+
+            <!-- Login Form -->
+
+            <form
+                id="loginForm"
+                class="login-form"
+            >
+
+                <!-- Email -->
+
+                <div class="form-group">
+
+                    <label for="loginEmail">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Password -->
+
+                <div class="form-group">
+
+                    <div class="password-label">
+
+                        <label for="loginPassword">
+                            Password
+                        </label>
+
+                        <a href="#">
+                            Forgot password?
+                        </a>
+
+                    </div>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        name="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Remember -->
+
+                <div class="remember-row">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            id="rememberMe"
+                        >
+
+                        Remember me
+
+                    </label>
+
+                </div>
+
+
+                <!-- Error Message -->
+
+                <div
+                    id="loginMessage"
+                    class="login-message"
+                ></div>
+
+
+                <!-- Submit -->
+
+                <button
+                    type="submit"
+                    class="login-submit"
+                >
+                    Login
+                </button>
+
+            </form>
+
+
+            <!-- Register -->
+
+            <p class="login-register">
+
+                Don't have an account?
+
+                <a href="#">
+                    Create an account
+                </a>
+
+            </p>
+
+
+            <!-- Back -->
+
+            <a
+                href="landing.html"
+                class="back-home"
+            >
+                ← Back to Home
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Settings - Finance Manager</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         SIDEBAR
+    ========================================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>Finance<span>Manager</span></h2>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="../index.html">
+                Dashboard
+            </a>
+
+            <a href="transactions.html">
+                Transactions
+            </a>
+
+            <a href="add-transaction.html">
+                Add Transaction
+            </a>
+
+            <a href="budget.html">
+                Budget
+            </a>
+
+            <a href="reports.html">
+                Reports
+            </a>
+
+            <a href="categories.html">
+                Categories
+            </a>
+
+            <a href="settings.html" class="active">
+                Settings
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- ========================================
+         MAIN CONTENT
+    ========================================= -->
+
+    <main class="main-content">
+
+        <header class="page-header">
+
+            <div>
+
+                <h1>Settings</h1>
+
+                <p>
+                    Manage your finance application settings.
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <!-- ========================================
+             PROFILE
+        ========================================= -->
+
+        <section class="content-card">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>Profile</h2>
+
+                    <p>
+                        Update your basic profile information.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <form id="profileForm">
+
+                <div class="form-group">
+
+                    <label for="profileName">
+                        Your Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="profileName"
+                        placeholder="Enter your name"
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Save Profile
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- ========================================
+             CURRENCY
+        ========================================= -->
+
+        <section class="content-card">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>Currency</h2>
+
+                    <p>
+                        Select the currency used by the application.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <form id="currencyForm">
+
+                <div class="form-group">
+
+                    <label for="currency">
+                        Currency
+                    </label>
+
+                    <select id="currency">
+
+                        <option value="RWF">
+                            Rwandan Franc (RWF)
+                        </option>
+
+                        <option value="USD">
+                            US Dollar (USD)
+                        </option>
+
+                        <option value="EUR">
+                            Euro (EUR)
+                        </option>
+
+                        <option value="GBP">
+                            British Pound (GBP)
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Save Currency
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- ========================================
+             APPEARANCE
+        ========================================= -->
+
+        <section class="content-card">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>Appearance</h2>
+
+                    <p>
+                        Choose how the application looks.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="setting-row">
+
+                <div>
+
+                    <strong>
+                        Dark Mode
+                    </strong>
+
+                    <p>
+                        Use a darker interface.
+                    </p>
+
+                </div>
+
+
+                <label class="switch">
+
+                    <input
+                        type="checkbox"
+                        id="darkModeToggle"
+                    >
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             DATA MANAGEMENT
+        ========================================= -->
+
+        <section class="content-card danger-card">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>Data Management</h2>
+
+                    <p>
+                        Permanently remove your saved financial data.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="clearDataButton"
+                class="btn btn-danger"
+            >
+                Clear All Data
+            </button>
+
+        </section>
+
+
+        <!-- ========================================
+             ABOUT APPLICATION
+        ========================================= -->
+
+        <section class="content-card">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>About</h2>
+
+                    <p>
+                        Finance Manager
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-info">
+
+                <p>
+                    A simple finance and expense management
+                    application for tracking income, expenses,
+                    budgets and financial reports.
+                </p>
+
+                <span>
+                    Version 1.0.0
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Shared JavaScript -->
+
+    <script src="../js/app.js"></script>
+
+    <!-- Settings JavaScript -->
+
+    <script src="../js/settings.js"></script>
+
+</body>
+
+</html>

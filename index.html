@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FinancePro | Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            Finance<span>Pro</span>
+        </div>
+
+
+        <nav>
+
+            <a
+                href="index.html"
+                class="active"
+            >
+                Dashboard
+            </a>
+
+            <a href="pages/transactions.html">
+                Transactions
+            </a>
+
+            <a href="pages/add-transaction.html">
+                Add Transaction
+            </a>
+
+            <a href="pages/budget.html">
+                Budget
+            </a>
+
+            <a href="pages/reports.html">
+                Reports
+            </a>
+
+            <a href="pages/categories.html">
+                Categories
+            </a>
+
+            <a href="pages/settings.html">
+                Settings
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div>
+
+                <h1>
+                    Dashboard
+                </h1>
+
+                <p>
+                    Welcome back! Here's your financial overview.
+                </p>
+
+            </div>
+
+
+            <a
+                href="pages/add-transaction.html"
+                class="add-button"
+            >
+                + Add Transaction
+            </a>
+
+        </header>
+
+
+
+        <!-- SUMMARY CARDS -->
+
+        <section class="summary-cards">
+
+
+            <!-- BALANCE -->
+
+            <div class="card">
+
+                <p>
+                    Total Balance
+                </p>
+
+                <h2 id="totalBalance">
+                    $0.00
+                </h2>
+
+                <span>
+                    Current balance
+                </span>
+
+            </div>
+
+
+            <!-- INCOME -->
+
+            <div class="card">
+
+                <p>
+                    Total Income
+                </p>
+
+                <h2 id="totalIncome">
+                    $0.00
+                </h2>
+
+                <span class="income">
+                    Money received
+                </span>
+
+            </div>
+
+
+            <!-- EXPENSE -->
+
+            <div class="card">
+
+                <p>
+                    Total Expenses
+                </p>
+
+                <h2 id="totalExpenses">
+                    $0.00
+                </h2>
+
+                <span class="expense">
+                    Money spent
+                </span>
+
+            </div>
+
+
+            <!-- BUDGET -->
+
+            <div class="card">
+
+                <p>
+                    Monthly Budget
+                </p>
+
+                <h2 id="totalBudget">
+                    $0.00
+                </h2>
+
+                <span>
+                    Current budget
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RECENT TRANSACTIONS -->
+
+        <section class="content-card">
+
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        Recent Transactions
+                    </h2>
+
+                    <p>
+                        Your latest financial activity
+                    </p>
+
+                </div>
+
+
+                <a href="pages/transactions.html">
+                    View All
+                </a>
+
+            </div>
+
+
+            <div id="recentTransactions">
+
+                <div class="empty-state">
+
+                    <h3>
+                        No transactions yet
+                    </h3>
+
+                    <p>
+                        Start by adding your first transaction.
+                    </p>
+
+                    <a
+                        href="pages/add-transaction.html"
+                        class="add-button"
+                    >
+                        Add Transaction
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- QUICK ACTIONS -->
+
+        <section class="content-card">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        Quick Actions
+                    </h2>
+
+                    <p>
+                        Manage your finances quickly
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="quick-actions">
+
+                <a
+                    href="pages/add-transaction.html"
+                    class="quick-card"
+                >
+
+                    <h3>
+                        Add Transaction
+                    </h3>
+
+                    <p>
+                        Record income or expense
+                    </p>
+
+                </a>
+
+
+                <a
+                    href="pages/budget.html"
+                    class="quick-card"
+                >
+
+                    <h3>
+                        Manage Budget
+                    </h3>
+
+                    <p>
+                        Set your monthly budget
+                    </p>
+
+                </a>
+
+
+                <a
+                    href="pages/reports.html"
+                    class="quick-card"
+                >
+
+                    <h3>
+                        View Reports
+                    </h3>
+
+                    <p>
+                        Analyze your finances
+                    </p>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/app.js"></script>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
